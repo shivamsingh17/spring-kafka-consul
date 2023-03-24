@@ -1,0 +1,57 @@
+#server:
+#  port: 8082
+#
+#spring:
+#  application:
+#    name: myapp
+#  h2:
+#    console.enabled: true
+#  datasource:
+#    driverClassName: org.h2.Driver
+#    url: jdbc:h2:C:/Users/asus/test/sampledata
+#    username: sa
+#    password:
+#  jpa:
+#    properties.hibernate.dialect: org.hibernate.dialect.H2Dialect
+#    hibernate.ddl-auto: update
+#    generate-ddl: true
+#    show-sql: true
+
+
+#  cloud:
+#    consul:
+#      host: localhost
+#      port: 8500
+#      config:
+#        enabled: true
+
+
+spring:
+  application:
+    name: myapp
+
+  cloud:
+    consul:
+      config:
+        import-check:
+          enabled: false
+#        data-key: data
+#        fail-fast: true
+#        format: yaml
+#        name: myapp
+#        enabled: true
+#      host: localhost
+#      port: 8500
+management:
+  security:
+    enabled:  false
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+#    fetch-registry: true
+#    register-with-eureka: true
+#
+#  instance:
+#    hostname: localhost
