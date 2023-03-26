@@ -73,10 +73,18 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-consul-discovery</artifactId>
-			<version>4.0.0</version>
+			<artifactId>spring-cloud-starter-consul-all</artifactId>
+			<version>3.1.1</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-consul-discovery</artifactId>
+			<version>3.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-actuator-autoconfigure</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>

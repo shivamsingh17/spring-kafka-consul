@@ -34,6 +34,7 @@ public class controller {
         String json = mapper.writeValueAsString(custoemerList);
         System.out.println(json);
         System.out.println(con.getA());
+        System.out.println(con.getB());
 
         return new ResponseEntity<>(custoemerList, HttpStatus.OK);
     }

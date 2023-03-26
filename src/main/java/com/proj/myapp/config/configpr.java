@@ -6,9 +6,24 @@ import org.springframework.context.annotation.Configuration;
 
 @Data
 @Configuration
-@ConfigurationProperties(prefix = "data")
+@ConfigurationProperties("user")
 public class configpr {
     private String a;
     private String b;
 
+    public String getA() {
+        return a;
+    }
+
+    public void setA(String a) {
+        this.a = a;
+    }
+
+    public String getB() {
+        return b;
+    }
+
+    public void setB(String b) {
+        this.b = b;
+    }
 }
