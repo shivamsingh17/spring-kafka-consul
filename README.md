@@ -1,6 +1,7 @@
 # spring-kafka-consul
 
 kv key: config/application/data
+
 properties (kv value):
 
 ```
