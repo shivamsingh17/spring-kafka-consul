@@ -2,11 +2,9 @@
 
 kv key: config/application/data
 properties (kv value):
-## value
+`code`
 server.port=8083
-
 spring.application.name=myapp
-
 spring.h2.console.enabled=true
 spring.datasource.driverClassName=org.h2.Driver
 spring.datasource.url=jdbc:h2:C:/Users/asus/test/sampledata
@@ -18,3 +16,4 @@ spring.jpa.generate-ddl=true
 spring.jpa.show-sql=true
 user.a=hffgutg
 user.b=uthgut
+`code`
