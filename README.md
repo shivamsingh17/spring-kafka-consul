@@ -2,6 +2,7 @@
 
 kv key: config/application/data
 properties (kv value):
+
 `code`
 server.port=8083
 spring.application.name=myapp
@@ -16,4 +17,3 @@ spring.jpa.generate-ddl=true
 spring.jpa.show-sql=true
 user.a=hffgutg
 user.b=uthgut
-`code`
