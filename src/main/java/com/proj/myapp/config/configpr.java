@@ -4,7 +4,7 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
-@Data
+//@Data
 @Configuration
 @ConfigurationProperties("user")
 public class configpr {

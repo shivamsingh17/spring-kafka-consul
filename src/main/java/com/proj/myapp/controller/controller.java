@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.proj.myapp.config.configpr;
 import com.proj.myapp.model.appmodel;
+import com.proj.myapp.service.ProducerServ;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -23,6 +24,8 @@ public class controller {
     private repo reps;
     @Autowired
     serv servc;
+    @Autowired
+    private ProducerServ producerServ;
 @Autowired
     configpr con;
 
@@ -35,7 +38,7 @@ public class controller {
         System.out.println(json);
         System.out.println(con.getA());
         System.out.println(con.getB());
-
+producerServ.sendMessage("chal gaya.......");
         return new ResponseEntity<>(custoemerList, HttpStatus.OK);
     }
     @PostMapping(path = "users",
